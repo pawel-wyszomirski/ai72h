@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Webpage</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>This is a simple webpage created using HTML, CSS, and JavaScript all in one file.</p>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>Responsive design</li>
+            <li>Clean and modern layout</li>
+            <li>Interactive elements</li>
+        </ul>
+
+        <button class="button" onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Simple Webpage. All rights reserved.</p>
+    </footer>
+    <script src="https://YOUR_APP_NAME.ploomberapp.io/copilot/index.js"></script>
+    <!-- Internal JavaScript -->
+    <script>
+        function showMessage() {
+            let messages = [
+                "Thanks for clicking!",
+                "Hello there!",
+                "Have a great day!",
+                "You're awesome!"
+            ];
+            let randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("message").innerHTML = randomMessage;
+        }
+
+        // Add a simple animation to the header
+        document.querySelector('header').addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#444';
+        });
+
+        document.querySelector('header').addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#333';
+        });
+    </script>
+</body>
+</html>
