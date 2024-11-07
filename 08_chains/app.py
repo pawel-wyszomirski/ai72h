@@ -8,7 +8,7 @@ load_dotenv(override=True)
 
 def basic_llm_chain():
     print("Welcome to the AI course!")
-    llm = ChatOpenAI(model="gpt-3")  # try different models eg. gpt-4o, gpt-3.5-turbo
+    llm = ChatOpenAI(model="gpt-3.5-turbo")  # try different models eg. gpt-4o
     print(llm.invoke("Write a short poem about pizza"))
 
 
