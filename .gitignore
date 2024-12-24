@@ -1,5 +1,13 @@
+.env
+__pycache__/
+.venv/
+.chainlit/
+*.pyc
+
 .chainlit
 .DS_Store
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
